@@ -18,7 +18,7 @@ class UserController extends Controller
         //
          
         $users = User::all();
-        return view('user.index');
+        return view('users.index');
     }
 
     /**
@@ -29,7 +29,7 @@ class UserController extends Controller
     public function create()
     {
         //
-        return view('user.create');
+        return view('users.create');
     }
 
     /**
@@ -47,7 +47,7 @@ class UserController extends Controller
         $user->password = $request->password;
         $user->telefono = $request->telefono;
         $user->save();
-        return Redirect::route('user.index');
+        return Redirect::route('users.index');
     }
 
     /**
@@ -71,7 +71,7 @@ class UserController extends Controller
     {
         //
         $user = User::findOrfail($id);
-        return view ('user.edit', compact('user'));
+        return view ('users.edit', compact('users'));
     }
 
     /**
@@ -91,9 +91,9 @@ class UserController extends Controller
             $user->password = $request->password;
         $user->telefono = $request->telefono;
         $user->update();
-        return Redirect::route('user.index');
+        return Redirect::route('users.index');
     }
-
+    
     /**
      * Remove the specified resource from storage.
      *
@@ -105,6 +105,6 @@ class UserController extends Controller
         //
         $user = User::findOrfail($id);
         $user->delete();
-        return Redirect::route('user.index');
+        return Redirect::route('users.index');
     }
 }
