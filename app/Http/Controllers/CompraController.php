@@ -90,6 +90,7 @@ class CompraController extends Controller
         $compra->fecha = $request->fecha;
         $compra->monto = $request->monto;
         $compra->mensaje_id = $request->mensaje_id;
+        $compra->update();
         return Redirect::route('compras.index');
     }
 

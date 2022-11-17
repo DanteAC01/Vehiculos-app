@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Compra extends Model
 {
     use HasFactory;
-    public function autos(){
+/*     public function autos(){
         return $this->hasMany(Auto::class);
     }
     public function users(){
@@ -16,5 +16,5 @@ class Compra extends Model
     }
     public function mensajes(){
         return $this->hasMany(Mensaje::class);
-    }
+    } */
 }

@@ -17,6 +17,7 @@ class CreateComprasTable extends Migration
             $table->id();
             $table->unsignedBigInteger('auto_id');
             $table->unsignedBigInteger('user_id');
+/*             $table->foreign('user_id'); */
             $table->date('fecha');
             $table->decimal('precio', 8, 2);
             $table->unsignedBigInteger('mensaje_id');
