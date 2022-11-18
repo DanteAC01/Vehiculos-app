@@ -17,7 +17,7 @@ class CreateFotosTable extends Migration
             $table->id();
             $table->string('url');
             $table->unsignedBigInteger('auto_id');
-            $table->foreign('auto_id')->references('id')->on('autos');
+            /* $table->foreign('auto_id')->references('id')->on('autos'); */
             $table->timestamps();
         });
     }
