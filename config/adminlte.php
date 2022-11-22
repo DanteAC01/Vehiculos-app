@@ -290,8 +290,27 @@ return [
     */
 
     'menu' => [
-        // Navbar items:
         [
+            'header'=>'ADMINISTRADORES',
+        ],
+        [
+            'text'=>'Marcas',
+            'url'=>'#',
+            'icon'=>'fas fa-gamepad',
+        ],
+        [
+            'header'=>'USUARIOS'
+        ],
+        [
+            'text'=>'Vehiculos',
+            'url'=>'#',
+        ],
+        [
+            'text'=>'Compras',
+            'url'=>'#'
+        ]
+        // Navbar items:
+        /* [
             'type'         => 'navbar-search',
             'text'         => 'search',
             'topnav_right' => true,
@@ -382,7 +401,7 @@ return [
             'text'       => 'information',
             'icon_color' => 'cyan',
             'url'        => '#',
-        ],
+        ], */
     ],
 
     /*
